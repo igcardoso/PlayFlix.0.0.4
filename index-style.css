@@ -1,0 +1,762 @@
+@charset"utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-align: left;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 5;
+}
+
+nav h1 {
+  margin-left: 4%;
+  font-size: 29pt;
+  color: #0a00ff;
+  border: none;
+}
+
+header {
+  background-image: url('Backgraund-found.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: Sans-Serif;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+#gradient {
+  background: rgba(0,0,0,);
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.0) 0, rgba(0, 0, 0 , 0) 40%, rgb(0,0,0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 5;
+
+}
+
+#slogam .h1 {
+  max-width: 53%;
+  color: white;
+}
+
+#slogam p {
+  max-width: 65%;
+  color: #F3F3F3;
+}
+
+#slogam {
+  margin-top: 1%;
+  margin-left: 2%;
+  padding: 2%;
+  text-align: left;
+  list-style-type: none;
+  border-right: 3px solid #0a00ff;
+}
+
+#slogam .logo {
+  display: none;
+}
+
+#buttons {
+  display: none;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+#buttons li {
+  display: none;
+}
+
+#buttons li a {
+  margin-left: 4%;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+#buttons button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 3em;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+}
+#button1 {
+  background: #0a00ff;
+  color: white;
+}
+
+#button2 {
+  background: white;
+  color: #0a00ff;
+}
+
+#input li{
+  display: inline-block;
+}
+
+#input{
+  width: 100%;
+}
+
+#input .input{
+  margin-left: 2.5%;
+  width: 62%;
+}
+
+#input input{
+  position: relative;
+  width: 100%;
+  height: 45pt;
+  font-size: 18pt;
+  border-radius: 3em;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  padding-left: 4.4%;
+  background: #1A1A1A;
+  color: white;
+}
+
+#input button{
+  position: absolute;
+  margin-left: -24pt;
+  margin-top: -34pt;
+  width: 58pt;
+  height: 58pt;
+  border-radius: 3em;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  background: rgb(63,55,255);
+  cursor: pointer;
+}
+
+#email::-webkit-input-placeholder{
+  position: absolute;
+  top: 25%;
+  color: #B6B6B6;
+  
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+  transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#email:hover::-webkit-input-placeholder{
+  top: -80%;
+  font-size: 13pt;
+}
+
+#span_login{
+  margin-left: 4%;
+  color: #B6B6B6;
+}
+
+#footer p {
+  color: rgb(215,215,215);
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+  z-index: 6;
+}
+
+#section-one td {
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+
+#section-one td img {
+  margin-left: 6%;
+}
+
+#section-one td h1, h3 {
+  margin-left: 20%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#section-one {
+  position: absolute;
+  position: relative;
+  background: black;
+  font-family: Sans-Serif;
+  width: 100%;
+}
+
+#section-one .table {
+  display: none;
+}
+
+/*section-thu*/
+
+#section-thu td {
+  color: white;
+  margin: 0;
+}
+
+#section-thu td img {
+  margin-left: 0%;
+}
+
+#section-thu td h1, h3 {
+  margin-left: 0%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#section-thu h3 {
+  margin-left: 0px;
+}
+
+#section-thu {
+  position: absolute;
+  position: relative;
+  text-align: left;
+  background: black;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  width: 100%;
+}
+
+#section-thu .table {
+  display: none;
+}
+
+/*section-tre*/
+
+#section-tre td {
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+
+#section-one td img {
+  margin-left: 6%;
+}
+
+#section-tre td h1, h3 {
+  margin-left: 20%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#section-tre {
+  position: absolute;
+  position: relative;
+  background: black;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  width: 100%;
+}
+
+#section-tre .table {
+  display: none;
+}
+
+#section_blog{
+  position: absolute;
+  position: relative;
+  background: #1A1A1A;
+  color: white;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 0px;
+}
+
+#section_blog h1{
+  font-size: 35pt;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#section_blog p{
+  font-size: 15pt;
+  margin-left: 35pt;
+  margin-right: 35pt;
+  color: #F3F3F3;
+}
+
+#section_blog i img{
+  padding: 0;
+}
+
+#section_blog .card{
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background: #0A0A0A;
+  border: none;
+  border-radius: 2em;
+  margin-right: 8pt;
+  margin-left: 8pt;
+  text-align: left;
+  width: 27%;
+}
+
+#section_blog .card h1, h2{
+  margin-left: 16pt;
+}
+
+#section_blog .card h1{
+  font-size: 50pt;
+}
+
+#section_blog .card .tip_card{
+  border-bottom: 4px solid #0a00ff;
+}
+
+#duvidas{
+  position: absolute;
+  position: relative;
+  background: #1A1A1A;
+  color: white;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 1%;
+}
+
+#duvidas .menu-hetratil li{
+  display: inline-block;
+  position: relative;
+}
+
+#duvidas .menu-hetratil .submenu{
+  background: black;
+  width: 632pt;
+  padding-left: 2%;
+  text-align: left;
+  margin-top: -30pt;
+  opacity: 0;
+  position: absolute;
+  position: relative;
+  z-index: 1;
+  
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+    transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#duvidas .menu-hetratil .submenu li p{
+  font-size: 12pt;
+}
+
+#duvidas .menu-hetratil .options:hover .submenu{
+  margin-top: 2pt;
+  padding-bottom: 4%;
+  opacity: 1;
+}
+
+#duvidas .menu-hetratil .options .pgt_button{
+  width: 600pt;
+  padding: 2%; 
+  padding-left: 3%;
+  text-align: left; 
+  font-size: 11pt;
+  border: none; 
+  background: #303030; 
+  cursor: pointer;
+  color: white;
+  z-index: 100;
+}
+
+#duvidas .menu-hetratil .options .plus_button{
+  padding: 13.4pt; 
+  border: none; 
+  background: #303030;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#duvidas .menu-hetratil .options:hover .plus_button{
+  background: black;
+}
+
+#duvidas .menu-hetratil .options:hover .plus_button img{
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#duvidas .menu-hetratil .options:hover .pgt_button{
+  background: black;
+}
+
+#duvidas .menu-hetratil .options .submenu p{
+  margin-left: -2%;
+  margin-top: 4pt;
+  opacity: 0;
+  
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+    transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#duvidas .menu-hetratil .options:hover .submenu p{
+  margin-left: 0%;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  nav h1 {
+    font-size: 24pt;
+    color: #0a00ff;
+    border: none;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+  }
+
+  header {
+    background-image: url('Backgraund-found.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    font-family: Sans-Serif;
+    width: 100%;
+    height: 820px;
+    position: relative;
+    z-index: 1;
+  }
+
+  #gradient {
+    background: rgba(0,0,0,);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.0) 0, rgba(0, 0, 0 , 0) 40%, rgb(0,0,0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 820px;
+    z-index: 5;
+
+  }
+  #slogam h1 {
+    color: white;
+  }
+
+  #slogam .h1 {
+    max-width: 100%;
+    color: white;
+  }
+
+  #slogam p {
+    max-width: 100%;
+    color: #F3F3F3;
+  }
+
+  #slogam {
+    margin-top: 68%;
+    margin-left: 0;
+    padding: 2%;
+    text-align: left;
+    list-style-type: none;
+    text-align: center;
+    border: none;
+  }
+
+
+  #slogam .logo {
+    display: block;
+  }
+
+  #slogam .logo {
+    margin-bottom: 1%;
+    font-size: 31pt;
+  }
+
+  #buttons {
+    display: inline-block;
+    margin-top: 6%;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #input{
+    display: none;
+  }
+  
+  #span_login{
+    display: none;
+  }
+
+  #buttons li {
+    display: inline-block;
+  }
+
+  #buttons li a {
+    margin-left: 10px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  #buttons button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 45px;
+    border-radius: 3em;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+  }
+
+  #button1 {
+    background: #0a00ff;
+    color: white;
+  }
+
+  #button2 {
+    background: white;
+    color: #0a00ff;
+  }
+
+  footer p {
+    color: rgb(215,215,215);
+  }
+
+  footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  #section-one .table-one {
+    display: none;
+  }
+
+  #section-one .table {
+    display: block;
+  }
+
+  #section-one  h1, h3 {
+    margin-left: 2%;
+    padding: 0;
+  }
+
+  #section-one {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  /*section-thu*/
+
+  #section-thu .table-one {
+    display: none;
+  }
+
+  #section-thu .table {
+    display: block;
+  }
+
+  #section-thu  h1, p {
+    margin-left: 2%;
+    padding: 0;
+  }
+
+  #section-thu {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  /*section-tre*/
+
+
+  #section-tre .table-one {
+    display: none;
+  }
+
+  #section-tre .table {
+    display: block;
+  }
+
+  #section-tre  h1, h3 {
+    margin-left: 2%;
+    padding: 0;
+  }
+
+  #section-tre {
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  
+#section_blog{
+  position: absolute;
+  position: relative;
+  background: #1A1A1A;
+  color: white;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: ;: 0px;
+}
+
+#section_blog h1{
+  font-size: 35pt;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#section_blog p{
+  font-size: 15pt;
+  margin-left: 35pt;
+  margin-right: 35pt;
+  color: #F3F3F3;
+}
+
+#section_blog i img{
+  padding: 0;
+}
+
+#section_blog .card{
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background: #0A0A0A;
+  border: none;
+  margin-right: %;
+  margin-left: 5.2%;
+  text-align: left;
+  width: 40%;
+}
+
+#section_blog .card h1, h2{
+  margin-left: 16pt;
+}
+
+#section_blog .card h1{
+  font-size: 50pt;
+}
+
+#section_blog .card .tip_card{
+  border-bottom: 4px solid #0a00ff;
+}
+
+#duvidas{
+  position: absolute;
+  position: relative;
+  background: #1A1A1A;
+  color: white;
+  border-top: 6px solid #222222;
+  font-family: Sans-Serif;
+  text-align: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 1%;
+}
+
+#duvidas .menu-hetratil li{
+  display: inline-block;
+  position: relative;
+}
+
+#duvidas .menu-hetratil .submenu{
+  background: black;
+  width: 397pt;
+  padding-left: 2%;
+  text-align: left;
+  margin-top: -30pt;
+  opacity: 0;
+  position: absolute;
+  position: relative;
+  z-index: 1;
+  
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+    transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#duvidas .menu-hetratil .submenu li p{
+  font-size: 12pt;
+}
+
+#duvidas .menu-hetratil .options:hover .submenu{
+  margin-top: 2pt;
+  padding-bottom: 4%;
+  opacity: 1;
+}
+
+#duvidas .menu-hetratil .options .pgt_button{
+  width: 354pt;
+  padding: 4%; 
+  padding-left: 3%;
+  text-align: left; 
+  font-size: 11pt;
+  border: none; 
+  background: #303030; 
+  color: white;
+  z-index: 100;
+}
+
+#duvidas .menu-hetratil .options .plus_button{
+  padding: 17pt; 
+  border: none; 
+  background: #303030;
+  z-index: 100;
+}
+
+#duvidas .menu-hetratil .options:hover .plus_button{
+  background: black;
+}
+
+#duvidas .menu-hetratil .options:hover .plus_button img{
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#duvidas .menu-hetratil .options:hover .pgt_button{
+  background: black;
+}
+
+#duvidas .menu-hetratil .options .submenu p{
+  margin-left: -2%;
+  margin-top: 4pt;
+  opacity: 0;
+  
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+    transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#duvidas .menu-hetratil .options:hover .submenu p{
+  margin-left: 0%;
+  opacity: 1;
+}
+
+}

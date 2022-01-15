@@ -1,0 +1,763 @@
+@charset"UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  font-family: Sans-Serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#menu-header {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,);
+  background-image: linear-gradient(to top,rgba(0,0,0,0.0) 0, rgba(0, 0, 0 , 0) 0.2%, rgb(0,0,0)100%);
+  font-family: Sans-Serif;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+#menu-header ul li {
+  display: inline-block;
+  margin-right: 6.4%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#menu-header .logo {
+  color:  #0a00ff;
+  font-size: 17px;
+  margin-left: 0.2%;
+  z-index: 10;
+}
+
+#menu-header button {
+  font-size: 17px;
+  background: none;
+  color: rgba(210,210,210,0.787);
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#menu-header button:hover {
+  color: #fff;
+  border-bottom: 2px solid  #fff;
+  
+  -webkit-transition: 0.3s left,0.3s width,0.3s opacity,0.3s;
+  transition: 0.3s left,0.3s width,0.3s opacity,0.3s;
+}
+
+#opcoes .submenu_opcoes{
+  position: absolute;
+  display: none;
+}
+
+#opcoes{
+  position: relative;
+}
+
+#opcoes:hover .submenu_opcoes{
+  display: block;
+}
+
+section.destaque {
+  position: relative;
+  background-image: url('https://1.bp.blogspot.com/-lBGPayN-Jw0/XlmhqL9G0SI/AAAAAAAAmwk/1mlPeiNk6twcNpHQT8H-rdIPQHEbP0KjgCLcBGAsYHQ/s2560/a_quiet_place_part_2_2020_movie_5k-3840x2160.jpg');
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 44.1%;
+  z-index: 2;
+}
+.destaque #title {
+  position:;
+  font-size: 30px;
+  margin-top: 9.1%;
+  margin-left: 1.4%;
+  color: white;
+  z-index: 5;
+}
+
+.destaque h3 {
+  position:;
+  margin-left: 1.4%;
+  color: white;
+  z-index: 5;
+}
+
+.destaque #clasific {
+  background: #ff870a;
+  box-shadow: 2px 2px 4px black;
+  padding: 0.1%;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.destaque #sinopsi {
+  position:;
+  margin-left: 1.4%;
+  margin-top: 1.1%;
+  max-width: 50%;
+  color: white;
+  z-index: 5;
+}
+
+#sinopsiCl {
+  display: none;
+}
+
+.destaque .players {
+  position:;
+  z-index: 5;
+  border-radius: 8em;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  font-size: 15px;
+  margin-left: 1.4%;
+  margin-top: 4.1%;
+  margin-bottom: 6.1%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 2.4%;
+  padding-top: 2.4%;
+  cursor: pointer;
+}
+
+.destaque #play {
+  background:  #0a00ff;
+}
+
+.destaque #play:hover {
+  background: rgb(106,89,255);
+}
+
+.destaque #playT {
+  background: rgba(0,0,0,0.214);
+}
+
+.destaque #playT:hover {
+  background: rgba(0,0,0,0.114);
+}
+
+#assessments {
+  margin-left: 50%;
+  padding-left: 1%;
+  border-left: 2px solid  #0a00ff;
+  color: white;
+  font-size: 10.1px;
+  opacity: 0;
+
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+  transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+}
+
+#assessments i {
+  color: #b6ff21;
+}
+
+.gradient {
+  background: rgba(0,0,0,);
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.0) 0, rgba(0, 0, 0 , 0) 50%, rgb(0,0,0)100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+}
+
+.gradient:hover #assessments {
+  margin-left: 72.1%;
+  opacity: 1;
+  font-size: 16.1px;
+}
+
+.menu {
+  display: none;
+}
+
+.h3 {
+  font-family: Sans-Serif;
+  font-size: 18px;
+  margin-left: 2.1%;
+  border-left: 2px solid   #0a00ff;
+  padding-left: 1.5%;
+  margin-bottom: 2.5%;
+  margin-top: 5%;
+  color: white;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  width: 97.9%;
+  margin-right: 2.1%;
+  overflow-x: auto;
+  border-radius: 0.6em;
+  margin-left: 2.1%;
+}
+.conteudo img {
+  border-radius: 0.6em;
+  width: 183px;
+  height: 260px;
+}
+#img-celular {
+  display: block;
+}
+#img-tv {
+  display: none;
+}
+.conteudo img:hover {
+  opacity: 0.2;
+
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+
+  -webkit-transition: 0.5s left,0.5s width,0.5s opacity;
+  transition: 0.5s left,0.5s width,0.5s opacity;
+
+  cursor: pointer;
+}
+
+.card {
+  background-image: url('/19 Sem Título_20211001104549.png');
+  background-position: center;
+  background-position-x: 10px;
+  background-position-y: 30px;
+  background-size: 166.1px;
+  min-width: 193px;
+  margin-right: 3.2%;
+  height: 330.2px;
+  text-align: left;
+  border-radius: 0.6em;
+  font-family: Sans-Serif;
+
+}
+
+#checkbox {
+  display: block;
+}
+
+.card #p {
+  font-size: 13px;
+  color: rgba(211,211,211,0.69);
+  margin-top: 3px;
+  max-width: 180px;
+}
+
+.card #p a {
+  color: rgba(211,211,211,0.69);
+  font-family: Sans-Serif;
+  font-size: 16px;
+  background: none;
+  margin-left: 3px;
+  padding: 0.1px 0.1px 0.1px 0.1px;
+  border-radius: 0.2em;
+  border: 1.5px solid   rgba(211,211,211,0.69);
+}
+
+.card p {
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  
+
+  section.destaque {
+    position: relative;
+    background-image: url('https://1.bp.blogspot.com/-lBGPayN-Jw0/XlmhqL9G0SI/AAAAAAAAmwk/1mlPeiNk6twcNpHQT8H-rdIPQHEbP0KjgCLcBGAsYHQ/s2560/a_quiet_place_part_2_2020_movie_5k-3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 92%;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .destaque #title {
+    position:;
+    font-size: 30px;
+    margin-top: 35%;
+    margin-left: 1.4%;
+    color: white;
+    z-index: 5;
+  }
+
+  .destaque h3 {
+    position:;
+    margin-left: 1.4%;
+    color: white;
+    z-index: 5;
+  }
+
+  .destaque #clasific {
+    background: #ff870a;
+    box-shadow: 2px 2px 4px black;
+    padding: 0.1%;
+    border-radius: 0.2em;
+    border: none;
+  }
+
+  .destaque #sinopsi {
+    display: none;
+  }
+
+  #sinopsiCl {
+    margin-top: 1.1%;
+    margin-left: 20%;
+    width: 60%;
+    color: white;
+    z-index: 5;
+    display: block;
+  }
+
+  .destaque .players {
+    position:;
+    z-index: 5;
+    border-radius: 8em;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+    color: white;
+    font-size: 15px;
+    margin-left: 1.4%;
+    margin-top: 4.1%;
+    margin-bottom: 6.1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2.4%;
+    padding-top: 2.4%;
+  }
+
+  .destaque #play {
+    background:  #0a00ff;
+  }
+
+  .destaque #play:hover {
+    background: rgb(103,130,255);
+  }
+
+  .destaque #playT {
+    background: rgba(0,0,0,0.214);
+  }
+
+  .destaque #playT:hover {
+    background: rgba(0,0,0,0.114);
+  }
+
+  #assessments {
+    display: none;
+  }
+
+  .gradient {
+    background: rgba(0,0,0,);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.0) 0, rgba(0, 0, 0 , 0) 50%, rgb(0,0,0)100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 24;
+
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 97.9%;
+    margin-right: 2.1%;
+    overflow-x: auto;
+    border-radius: 0.6em;
+    margin-left: 2.1%;
+  }
+  .conteudo img {
+    border-radius: 0.6em;
+    width: 183px;
+    height: 260px;
+  }
+  #img-celular {
+    display: block;
+  }
+  #img-tv {
+    display: none;
+  }
+  .conteudo img:hover {
+    opacity: 0.2;
+
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+
+    -webkit-transition: 0.5s left,0.5s width,0.5s opacity;
+    transition: 0.5s left,0.5s width,0.5s opacity;
+
+    cursor: pointer;
+  }
+
+  .card {
+    background-image: url('/19 Sem Título_20211001104549.png');
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: 30px;
+    background-size: 166.1px;
+    min-width: 193px;
+    margin-right: 3.1%;
+    height: 330.2px;
+    text-align: left;
+    border-radius: 0.6em;
+    font-family: Sans-Serif;
+  }
+
+  .card #p {
+    font-size: 13px;
+  }
+  .card p {
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 1366px) {
+
+  .menu {
+    display: block;
+  }
+  
+  #menu-header{
+    text-align: center;
+  }
+  
+  #menu-header .options {
+    display: none;
+  }
+  
+  #menu-header .logo{
+    font-size: 22px;
+  }
+  
+  .destaque #title {
+    position:;
+    font-size: 30px;
+    margin-top: 9.1%;
+    margin-left: 6%;
+    color: white;
+    z-index: 5;
+  }
+
+  .destaque h3 {
+    position:;
+    margin-left: 6%;
+    color: white;
+    z-index: 5;
+  }
+
+  .destaque #clasific {
+    background: #ff870a;
+    box-shadow: 2px 2px 4px black;
+    padding: 0.1%;
+    border-radius: 0.2em;
+    border: none;
+  }
+
+  .destaque #sinopsi {
+    position:;
+    margin-left: 6%;
+    margin-top: 1.1%;
+    max-width: 50%;
+    color: white;
+    z-index: 5;
+  }
+
+  #sinopsiCl {
+    display: none;
+  }
+
+  .destaque .players {
+    position:;
+    z-index: 5;
+    border-radius: 8em;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+    color: white;
+    font-size: 15px;
+    margin-left: 6%;
+    margin-top: 4.1%;
+    margin-bottom: 6.1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2.4%;
+    padding-top: 2.4%;
+    cursor: pointer;
+  }
+
+
+  .menu {
+    background: rgba(0,0,0,0);
+    background-image: linear-gradient(to left,rgba(0,0,0,0.0) 1%, rgba(0, 0, 0 , 0) 10%, rgba(0,0,0,0.908) 100%);
+    width: 10%;
+    position: fixed;
+    list-style: none;
+    padding-bottom: 100%;
+    z-index: 6;
+    display: block;
+  }
+  
+  #menu-tv .btn .optionsfirstbuttons{
+    background: none;
+    margin-top: 131.1%;
+    margin-left: 17%;
+  }
+  
+  #menu-tv .btn .optionsbuttons{
+    background: none;
+    margin-top: 30.2%;
+    margin-left: 17%;
+  }
+
+  #menu-tv .options .optionsbuttons,.optionsfirstbuttons{
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  #menu-tv .submenu #submenuoptions img {
+    margin-top: -50%;
+    padding: 0;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 8em;
+  }
+
+  #menu-tv .submenu .primatsubmenuoptions {
+    margin-top: 5.2%;
+    color: rgba(210,210,210,0.787);
+  }
+
+  #menu-tv .submenu .primatsubmenuoptions:hover {
+    color: white;
+    border-left: 2px solid  #0a00ff;
+  }
+  
+  #menu-tv .submenu .primatsubmenuoptions i{
+    padding-left: 6px;
+  }
+
+  #menu-tv .submenu .submenuoptions {
+    color: rgba(210,210,210,0.787);
+    margin-top: 6.2%;
+    cursor: pointer;
+  }
+  
+  #menu-tv .submenu .submenuoptions i{
+    padding-left: 6px;
+  }
+
+  #menu-tv .submenu .submenuoptions:hover {
+    color: white;
+    border-left: 2px solid  #0a00ff;
+  }
+
+  #menu-tv .submenu .submenuoptionsair {
+    color: #0a00ff;
+    margin-top: 9%;
+    cursor: pointer;
+  }
+
+  #menu-tv .options #img {
+    font-size: 24px;
+    color: white;
+  }
+
+  .menu li .submenu {
+    width: 576px;
+    height: 1090px;
+    padding: 15px;
+    margin-top: 0;
+    background: rgba(0,0,0,0);
+    background-image: linear-gradient(to left,rgba(0,0,0,0.0) 4%, rgba(0, 0, 0 , 0) 1%, rgb(0,0,0) 100%);
+    overflow: hidden;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: -692px;
+    padding-bottom: 100%;
+    opacity: 0;
+    z-index: 27;
+
+    -webkit-transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+    transition: 0.5s left,0.5s width,0.5s opacity,0.5s;
+
+  }
+  .menu li .submenu button {
+    background: none;
+    color: white;
+    margin-top: 30px;
+    border: none;
+    font-size: 19.2px;
+    z-index: 27;
+
+  }
+  .menu li .submenu .button2 {
+    background: none;
+    color: rgba(194,194,194,0.57);
+    margin-top: 45px;
+    border: none;
+    font-size: 15px;
+    z-index: 27;
+  }
+
+  .menu li .submenu button:hover {
+
+    /*
+  -webkit-animation: jlplayer-sk-bouncedelay infinite 1s  ease-in-out both;
+    animation: jlplayer-sk-bouncedelay 1s infinite ease-in-out both;
+    */
+  }
+  .menu li:hover .submenu {
+    left: 0px;
+    opacity: 1;
+    width: 576px;
+    height: 1090px;
+    z-index: 27;
+  }
+
+
+  /*estilo do nosso link*/
+  .first {
+    color: white;
+  }
+  .menu .submenu a:hover {
+    color: #fff;
+    font-size: 23px;
+  }
+  .menu .submenu a {
+    color: #727272;
+  }
+  
+  #h3 {
+    font-family: Sans-Serif;
+    font-size: 18px;
+    margin-left: 6.5%;
+    border-left: 2px solid #0a00ff;
+    padding-left: 1.5%;
+    margin-bottom: 2.5%;
+    margin-top: 22.2%;
+    color: white;
+  }
+
+
+  .h3 {
+    font-family: Sans-Serif;
+    font-size: 18px;
+    margin-left: 6.5%;
+    border-left: 2px solid #0a00ff;
+    padding-left: 1.5%;
+    margin-bottom: 2.5%;
+    margin-top: 5%;
+    color: white;
+  }
+
+
+  .conteudo {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    width: 92%;
+    margin-right: 2.1%;
+    overflow-x: auto;
+    border-radius: 0.6em;
+    margin-left: 8%;
+  }
+  .conteudo img {
+    border-radius: 0.6em;
+    width: 300px;
+    height: 180px;
+  }
+  #img-celular {
+    display: none;
+  }
+  #img-tv {
+    display: block;
+  }
+  .conteudo img:hover {
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+
+    -webkit-transition: 0.5s left,0.5s width,0.5s opacity;
+    transition: 0.5s left,0.5s width,0.5s opacity;
+
+    cursor: pointer;
+  }
+
+  .card {
+    background: none;
+    position: relative;
+    min-width: 300px;
+    margin-right: 3.1%;
+    height: 186px;
+    text-align: left;
+    border-radius: 0.6em;
+    font-family: Sans-Serif;
+  }
+
+  .card:hover #p {
+    font-size: 13px;
+    display: block;
+  }
+  .card:hover p {
+    margin-left: 2%;
+    display: block;
+  }
+
+
+  .card:hover {
+    border: 2px solid #0100ff;
+  }
+
+  #checkbox {
+    display: none;
+  }
+
+  .card #p {
+    font-size: 13px;
+    display: none;
+  }
+  .card p {
+    margin-left: 2%;
+    display: none;
+  }
+}
